@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #3C0;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+#canvas {
+  display: block;
+  margin: 40px auto 0 auto;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 20px green;
+}
+
+.name {
+  text-shadow: 0 0 8px #060;
+  bottom: 10px;
+  right: 15px;
+  position: fixed;
+}
+
+/* Remove 000webhost watermark */
+
+div a[href^="https://www.000webhost.com/"] img {
+  display: none;
+}

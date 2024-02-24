@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  zoom: reset;
+  overflow: hidden;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(assets/background.png);
+  background-size: cover;
+}
+
+#header {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#pcards, #dcards {
+  font-size: 0;
+}
+
+.cards {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 8%;
+  width: 100%;
+}
+
+.card {
+  width: 120px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+h3 {
+  margin: 8px 0;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+button {
+  margin: 10px 10px;
+  outline: none;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #880003;
+  border: solid #B70004 4px;
+  border-style: dashed;
+  text-shadow: 0 0 8px black;
+  color: white;
+  box-shadow: 0 0 15px #1D1D1D;
+}
+
+button:disabled {
+  background-color: #510002;
+  border: solid #660002 4px;
+  border-style: dashed;
+  color: #8B8B8B;
+}
+
+button:active {
+  border-style: dashed;
+  box-shadow: 0 0 15px #111;
+  transform: translateY(2px);
+}
+
+.name {
+  bottom: 10px;
+  right: 15px;
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+.score {
+  text-align: center;
+  font-size: 28px;
+  bottom: 10px;
+  left: 10px;
+  position: fixed;
+  color: white;
+  text-shadow: 0 0 8px black;
+}
+
+/* Remove 000webhost watermark */
+
+div a[href^="https://www.000webhost.com/"] img {
+  display: none;
+}

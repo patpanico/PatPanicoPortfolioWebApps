@@ -1,0 +1,144 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+@font-face {
+	font-family: arcade-classic;
+	src: url(assets/ARCADECLASSIC.TTF);
+}
+
+body {
+	font-family: arcade-classic;
+	font-size: 18px;
+	color: white;
+	overflow: hidden;
+}
+
+.introsection {
+	height: 100vh;
+	min-height: 500px;
+	background-color: #0d0d0d;
+}
+
+button.navbar-toggler:focus {
+	outline: none;
+}
+
+/* CONTENT */
+
+.header {
+	font-size: 555%;
+	margin-bottom: 50px;
+}
+
+.content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	width: 100%;
+}
+
+.content-img {
+	width: 100%;
+	height: auto;
+}
+
+div.content-container {
+	margin: 0 auto;
+	width: 798px;
+	height: auto;
+}
+
+div.content-link {
+	width: 266px;
+	height: 266px;
+	float: left;
+}
+
+div.content-link a img {
+	width: 256px;
+	height: auto;
+	margin-top: 2.5px;
+	margin-left: 2.5px;
+	transition: width 0.2s, height 0.2s, margin 0.2s;
+	-o-transition: width 0.2s, height 0.2s, margin 0.2s;
+	-ms-transition: width 0.2s, height 0.2s, margin 0.2s;
+	-moz-transition: width 0.2s, height 0.2s, margin 0.2s;
+	-webkit-transition: width 0.2s, height 0.2s, margin 0.2s;
+}
+
+div.content-link a img:hover {
+	width: 266px;
+	height: auto;
+	margin-left: 0;
+	margin-top: 0;
+}
+
+/* Mobile Compatibility */
+
+@media screen and (max-width: 860px) {
+	.header {
+		font-size: 8vw;
+		margin-bottom: 5vh;
+	}
+}
+
+@media all and (orientation: portrait) {
+	@media screen and (max-width: 860px) {
+		div.img-container {
+			width: 532px;
+		}
+		div.last-img-link {
+			clear: both;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	@media screen and (max-width: 535px) {
+		div.img-container {
+			width: auto;
+		}
+		div.img-link,
+		div.img-link a img,
+		div.img-link a img:hover {
+			width: 200px;
+			width: 25vh;
+			height: auto;
+		}
+		div.img-link {
+			clear: both;
+			margin-left: 50%;
+			transform: translateX(-50%);
+		}
+		div.img-link a img:hover {
+			margin-top: 2.5px;
+			margin-left: 2.5px;
+		}
+	}
+}
+
+@media all and (orientation: landscape) {
+	@media screen and (max-height: 480px) {
+		div.img-container {
+			width: 90%;
+			width: 90vw;
+			margin: 0 8%;
+			margin: 0 8vw;
+		}
+		div.img-link,
+		div.img-link a img,
+		div.img-link a img:hover {
+			width: 200px;
+			width: 50vh;
+			height: auto;
+		}
+	}
+}
