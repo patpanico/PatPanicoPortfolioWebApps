@@ -1,0 +1,1 @@
+Archive of my original portfolio website in vanilla JS, CSS, and HTML written by me in 2016.
